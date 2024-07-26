@@ -63,27 +63,27 @@ function playRound() {
         roundWinner = "TIE";
     }
     else if ((playerChoice === "rock") && (computerChoice === "scissors")) {
-        roundWinner = "PLAYER";
+        roundWinner = "ROCK BEATS SCISSORS | PLAYER WINS";
         playerScore++;
     }
     else if ((playerChoice === "scissors") && (computerChoice === "paper")) {
-        roundWinner = "PLAYER";
+        roundWinner = "SCISSORS BEATS PAPER | PLAYER WINS";
         playerScore++;
     }
     else if ((playerChoice === "paper") && (computerChoice === "rock")) {
-        roundWinner = "PLAYER";
+        roundWinner = "PAPER BEATS ROCK | PLAYER WINS";
         playerScore++;
     }
     else if ((computerChoice === "rock") && (playerChoice === "scissors")) {
-        roundWinner = "COMPUTER";
+        roundWinner = "ROCK BEATS SCISSORS | COMPUTER WINS";
         computerScore++;
     }
     else if ((computerChoice === "scissors") && (playerChoice === "paper")) {
-        roundWinner = "COMPUTER";
+        roundWinner = "SCISSORS BEATS PAPER | COMPUTER WINS";
         computerScore++;
     }
     else if ((computerChoice === "paper") && (playerChoice === "rock")) {
-        roundWinner = "COMPUTER";
+        roundWinner = "PAPER BEATS ROCK | COMPUTER WINS";
         computerScore++;
     }
     else {
