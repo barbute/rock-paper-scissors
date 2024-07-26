@@ -4,9 +4,6 @@
  * Author: barbute
  */
 
-// -1 will indicate no choice or invalid choice 
-// throughout this program
-
 let computerScore = 0;
 let playerScore = 0;
 
@@ -83,36 +80,3 @@ function playRound(computerSelection, playerSelection) {
         return "ERROR";
     }
 }
-
-console.log(playRound(getComputerChoice(), getPlayerChoice()));
-
-console.log("COMPUTER SCORE: " + computerScore);
-console.log("PLAYER SCORE: " + playerScore);
-
-roundNumber++;
-
-console.log(playRound(getComputerChoice(), getPlayerChoice()));
-
-console.log("COMPUTER SCORE: " + computerScore);
-console.log("PLAYER SCORE: " + playerScore);
-
-roundNumber++;
-
-console.log(playRound(getComputerChoice(), getPlayerChoice()));
-
-console.log("COMPUTER SCORE: " + computerScore);
-console.log("PLAYER SCORE: " + playerScore);
-
-roundNumber++;
-
-console.log(playRound(getComputerChoice(), getPlayerChoice()));
-
-console.log("COMPUTER SCORE: " + computerScore);
-console.log("PLAYER SCORE: " + playerScore);
-
-roundNumber++;
-
-console.log(playRound(getComputerChoice(), getPlayerChoice()));
-
-console.log("COMPUTER SCORE: " + computerScore);
-console.log("PLAYER SCORE: " + playerScore);
