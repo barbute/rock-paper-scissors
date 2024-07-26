@@ -10,6 +10,8 @@
 let computerScore = 0;
 let playerScore = 0;
 
+let roundNumber = 1;
+
 function getComputerChoice() {
     let computerChoice = -1;
     computerChoice = Math.floor(Math.random() * 3);
@@ -25,7 +27,7 @@ function getPlayerChoice() {
     // This while loop will continually ask for a valid
     // input until the user has provided one
     while(!hasPlayerChosen) {
-        playerInput = prompt("Choose: Rock, Paper, or Scissors: ").toLowerCase();
+        playerInput = prompt(`Round ${roundNumber} \n Choose Rock, Paper, or Scissors`).toLowerCase();
 
         switch(playerInput) {
             case "rock":
@@ -81,6 +83,34 @@ function playRound(computerSelection, playerSelection) {
         return "ERROR";
     }
 }
+
+console.log(playRound(getComputerChoice(), getPlayerChoice()));
+
+console.log("COMPUTER SCORE: " + computerScore);
+console.log("PLAYER SCORE: " + playerScore);
+
+roundNumber++;
+
+console.log(playRound(getComputerChoice(), getPlayerChoice()));
+
+console.log("COMPUTER SCORE: " + computerScore);
+console.log("PLAYER SCORE: " + playerScore);
+
+roundNumber++;
+
+console.log(playRound(getComputerChoice(), getPlayerChoice()));
+
+console.log("COMPUTER SCORE: " + computerScore);
+console.log("PLAYER SCORE: " + playerScore);
+
+roundNumber++;
+
+console.log(playRound(getComputerChoice(), getPlayerChoice()));
+
+console.log("COMPUTER SCORE: " + computerScore);
+console.log("PLAYER SCORE: " + playerScore);
+
+roundNumber++;
 
 console.log(playRound(getComputerChoice(), getPlayerChoice()));
 
