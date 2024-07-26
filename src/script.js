@@ -8,6 +8,9 @@
 let computerChoice = -1;
 let playerChoice = -1;
 
+let computerScore = 0;
+let playerScore = 0;
+
 function getComputerChoice() {
     computerChoice = Math.floor(Math.random() * 3);
 
