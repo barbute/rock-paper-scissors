@@ -2,6 +2,61 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.round-box {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+#font-weight-normal {
+    font-weight: normal;
+}
+
+#round-number {
+    font-weight: bold;
+    color: darkgoldenrod;
+}
+
+.score-box {
+    display: flex;
+    padding: 0px 400px;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.user {
+    background-color:beige;
+    padding: 15px;
+    border-radius: 20px;
+    border: burlywood 4px solid;
+}
+
+.input-buttons {
+    display: flex;
+    margin: 20px 0px;
+    padding: 0px 200px;
+    justify-content: center;
+    gap: 20px
+}
+
 .button-icon {
-    font-size: 50px;
+    font-size: 70px;
+}
+
+.result-box {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    margin: 0px 25vw;
+    padding: 15px;
+    border-radius: 20px;
+    border: burlywood 4px solid;
+    font-size: 20px;
+}
+
+#result-text {
+    font-weight: bold;
+    color: lightgreen;
 }
