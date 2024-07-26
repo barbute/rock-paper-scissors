@@ -13,3 +13,30 @@ function getComputerChoice() {
 
     return computerChoice;
 }
+
+function getPlayerChoice() {
+    let hasPlayerChosen = false;
+    let playerInput = "";
+
+    while(!hasPlayerChosen) {
+        playerInput = prompt("Choose: Rock, Paper, or Scissors: ").toLowerCase();
+
+        switch(playerInput) {
+            case "rock":
+                playerChoice = 0;
+                break;
+            case "paper":
+                playerChoice = 1;
+                break;
+            case "scissors:":
+                playerChoice = 2;
+                break;
+            default:
+                playerChoice = -1;
+        }
+
+        if (playerChoice > -1) {
+            hasPlayerChosen = true;
+        }
+    }
+}
