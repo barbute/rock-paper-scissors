@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script defer src="./script.js"></script>
     <link rel="icon" href="./images/rocketship.png">
 </head>
 <body>
+    <div class="round-box">
+        <p>Round <span id="font-weight-normal">#</span><span id="round-number">1</span></p>
+    </div>
+    <div class="score-box">
+        <p class="user">Player <span id="score-player">0</span></p>
+        <p class="user">Computer <span id="score-computer">0</span></p>
+    </div>
+    <div class="input-buttons">
+        <button id="user-rock"><span class="button-icon">🪨</span> </br> Rock</button>
+        <button id="user-paper"><span class="button-icon">📃</span> </br> Paper</button>
+        <button id="user-scissors"><span class="button-icon">✂️</span> </br> Scissors</button>
+    </div>
+    <div class="result-box">
+        <p><span id="result-text">Result: </span><span id="result"></span></p>
+    </div>
 </body>
 </html>
